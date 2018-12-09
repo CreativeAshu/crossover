@@ -17,9 +17,12 @@
 			</column>
 			<column name="driver_id" type="BIGINT" />
 			<column name="rider_id" type="BIGINT" />
-			<column name="start_time" type="VARCHAR(255)" />
-			<column name="end_time" type="VARCHAR(255)" />
+			<column name="start_time" type="TIMESTAMP" />
+			<column name="end_time" type="TIMESTAMP" />
 			<column name="distance" type="BIGINT" />
+			<column name="ride_type" type="VARCHAR(10)" />
+			<column name="creation_date" type="TIMESTAMP" />
+			<column name="last_modified_date" type="TIMESTAMP" />
 		</createTable>
 		<addForeignKeyConstraint baseColumnNames="driver_id"
 			baseTableName="ride" constraintName="fk_address_person_driver"
